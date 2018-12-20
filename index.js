@@ -17,7 +17,8 @@ const app = appCreator({
     recognitionEnabled: process.env.WEBRTC_RECOGNITION_ENABLED,
     publishState: process.env.WEBRTC_PUBLISH_STATE,
     trustProxy: process.env.WEBRTC_TRUST_PROXY,
-    enableCors: process.env.WEBRTC_CORS
+    enableCors: process.env.WEBRTC_CORS,
+    urlPath: process.env.WEBRTC_URL_PATH
 })
 
 app.listen(process.env.PORT || 3000)
